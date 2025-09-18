@@ -58,5 +58,18 @@
   <footer>
     <p>© 2025 Aditi Srivastava | Coding Samurai Internship</p>
   </footer>
+  <!--javascript-->
+  <script>
+  
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
